@@ -1,1 +1,1 @@
-This a in construction repository for the exercises of JavaScript, they are simple and starting by setting the JavaScript into html structure and they go till some exercises already in the JavaScript sheet.
+This repository is under construction and contains JavaScript exercises. The exercises start with embedding JavaScript into the HTML structure and progress to more advanced tasks, including exercises in the standalone JavaScript file.
