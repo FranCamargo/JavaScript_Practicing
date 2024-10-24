@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Evento de Teclado</title>
+    <!---JS--->
+    <script>
+        /*  onKeyUP: exibe o caractere e depois executa a ação.
+
+            onKeyDown: Primeiro executa a ação e depois exibe o caractere.
+
+            onKeyPress Primeiro executa a ação e depois exibe o caractere.
+            Não tem suporte ás teclas especiais: F1 a F12, Alt, Ctrl, Shift...
+        */
+
+        //Função usando OneKeyUP (pop-up mostra o que for digitado)
+         function exibir() {
+
+        //Obter valor campo texto
+        let campo = document.getElementById("campo").value;
+
+        //Exibir o conteúdo digitado no campo
+        alert(campo);
+    }
+         //Função usando OneKeyDown (pop-up vazio quando toca em qlqer tecla)
+        function mostre() {
+
+            //Obter valor campo texto
+            let campo = document.getElementById("campo").value;
+
+            //Exibir o conteúdo digitado no campo
+            alert(campo);
+
+
+        }
+
+        //Função usando OneKeyPress (pop-up vazio quando toca em qlqer tecla exceto especiais)
+        function mostrar() {
+
+            //Obter valor campo texto
+            let campo = document.getElementById("campo").value;
+
+            //Exibir o conteúdo digitado no campo
+            alert(campo);
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="campo" onKeyUP="exibir()">
+    <input type="text" id="campo" onkeydown="mostre()">
+    <input type="text" id="campo" onkeypress="mostrar()">
+
+</body>
+
+</html>
