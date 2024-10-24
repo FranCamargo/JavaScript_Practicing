@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seletor ID</title>
+    <!---JS--->
+    <script> 
+
+        //Função
+        function exibirConteudo (){
+
+            //Obter dados do ID Campo
+            let campo = document.getElementById("campo");
+
+            //Exibir o conteúdo
+            alert(campo.value);
+
+             //Apagar o conteúdo no campo após exibir o alerta
+             campo.value = "";
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="text" id="campo">
+    <button onclick="exibirConteudo()">Clique Aqui</button>
+
+
+</body>
+
+</html>

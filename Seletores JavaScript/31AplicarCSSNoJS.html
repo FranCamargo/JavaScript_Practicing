@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicar CSS com javascript</title>
+    <!---JS--->
+    <script> 
+        //Função
+        function acao(){
+
+            //Obter o elemento em h1
+            let texto = document.getElementsByTagName("h1")[0];
+
+            //Aplicar CSS
+            texto.style.color="#FF0000";
+            texto.style.fontSize= "20px";
+
+            //Alterar o conteúdo
+            texto.innerHTML = "Curso de JavaScript";
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <button onclick="acao()">Clique Aqui</button>
+</body>
+
+</html>
