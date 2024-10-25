@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efeito Animate</title>
+    <!---CSS-->
+    <style>
+        div{
+            width: 100px;
+            height: 80px;
+            background-color: blueviolet;
+            }
+
+    </style>
+
+    <!---JQuery--->
+    <script src="./jquery-3.7.1.min.js"> </script>
+
+    <!--Script-->
+    <script>
+
+        //Ao carregar o documento
+        $(document).ready(function(){
+
+            //Efeito animação
+            $("button").click(function(){
+
+                $("div").animate({
+
+                    width:"800px",
+                    height:"30px",
+                
+
+                });
+
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <button>Clique aqui</button>
+    <hr>
+    <div> </div>
+
+</body>
+
+</html>
